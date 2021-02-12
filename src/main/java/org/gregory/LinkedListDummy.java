@@ -64,7 +64,6 @@ public class LinkedListDummy {
 
 
     public void insertAfter(Node _nodeAfter, Node _nodeToInsert) {
-
         if (_nodeAfter == null) {
             _nodeToInsert.setNext(this.getNodeDummy().getNext());
             this.getNodeDummy().getNext().setPrev(_nodeToInsert);
@@ -144,23 +143,7 @@ public class LinkedListDummy {
             nodeThat = nodeThat.getPrev();
             nodeThis = nodeThis.getPrev();
         }
-
         return true;
-    }
-
-    @Override
-    public String toString() {
-        return "LinkedList2{" +
-                "Dummy.value = " + getNodeDummy().value +
-                ", Dummy.next = " + getNodeDummy().getNext().getValue() +
-                ", Dummy.prev = " + getNodeDummy().getPrev() +
-                ", Dummy.next.value = " + getNodeDummy().getNext().getValue() +
-                ", Dummy.next.next = " + getNodeDummy().getNext().getNext() +
-                ", Dummy.next.prev = " + getNodeDummy().getNext().getPrev() +
-                ", Dummy.prev.value = " + getNodeDummy().getPrev().getValue() +
-                ", Dummy.prev.next = " + getNodeDummy().getPrev().getNext() +
-                ", Dummy.prev.prev = " + getNodeDummy().getPrev().getPrev() +
-                '}';
     }
 
 }
